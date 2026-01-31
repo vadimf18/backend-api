@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ project_name }} - New Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #555555;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #555555;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        .info {
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #414141;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 3px;
+            margin: 20px 0;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #555555;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ project_name }} - New Account</h1>
+        <p>You have a new account:</p>
+        <p class="info">Username: <strong>{{ username }}</strong></p>
+        <p class="info">Password: <strong>{{ password }}</strong></p>
+        <a href="{{ link }}" class="button">Go to Dashboard</a>
+        <hr>
+    </div>
+</body>
+</html>
